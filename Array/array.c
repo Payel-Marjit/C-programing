@@ -1,0 +1,35 @@
+//WAP to take input into an integer array & print the array
+#include<stdio.h>
+void main()
+{
+    int i,n;
+    printf("Enter the Range = ");
+    scanf("%d",&n);
+    int a[n]; //array declaration
+    //input
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the No. = ");
+        scanf("%d",&a[i]);
+    }
+    //print
+printf("\nBefore = \n");
+
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%5==0)
+            printf("-1 %d ",a[i]);
+        else
+            printf("%d ",a[i]);
+    }
+
+    printf("\nAfter= \n");
+
+    for(i=0;i<n;i++)
+    {
+        printf("%d",a[i]);
+
+        if(a[i]%5==0)
+            printf("-1 ");
+    }
+}
