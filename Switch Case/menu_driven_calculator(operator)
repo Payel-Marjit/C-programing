@@ -1,11 +1,11 @@
-//WAP to create a menu driven calculator by using option (perfect)
+//to create a menu driven calculator by using operator
 #include<stdio.h>
 void main()
 {
     char ch;
     int a,b;
-    printf("Press '+' or Add\nPress '-' for Subtract\nPress '*' for Multiply\nPress '/' for Division\n");
-    printf("Enter the Choice = ");
+    printf("Press + for Add\nPress - for Subtract\nPress * for Multiply\nPress / for Division\n");
+    printf("Enter the Operator = ");
     scanf("%c",&ch);   
     switch(ch)
     {
